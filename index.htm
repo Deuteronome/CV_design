@@ -6,15 +6,15 @@
     <title>CV - Olivier Burcker</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="icon" href="./asset/logoCV.png">
-    <!--<script type="module" src="./script/app.js"></script>-->
+    <script type="module" src="./script/app.js" defer></script>
 </head>
 <body>
     
-    <!--<div class="start-screen">
-        <audio id="intro-sound" src="./asset/introCV.mp3"></audio>
+    <div class="start-screen">
+        
         <h1 class="start-quote">Comprendre le monde</h1>
         <h1 class="start-quote">est un préalable pour le changer...</h1>
-    </div>-->
+    </div>
     
     <header>
         <div class="info box-custom">
@@ -43,7 +43,9 @@
     </header>
 
     <nav>
-
+        <div class="nav-button-active nav-left" id="trigger-profile">Profil</div>
+        <div class="nav-button" id="trigger-pro">Expérience Professionnelle</div>
+        <div class="nav-button nav-right" id="trigger-perso">Intérets et réalisations</div>
     </nav>
 
     <main>
@@ -51,22 +53,137 @@
             <div class="profile-left">
                 <div class="presentation box-custom">
                     <h2>Moi, en bref!</h2>
-                    <p>Ingénieur pédagogique spécialisé en informatique et en mathématiques au sein de l'E2C Grand Lille depuis 2008, je suis guidé par la conviction que l'apprentissage est émancipateur.</p>
-                    <p>Eveiller la curiosité, stimuler l'autonomie et consolider la capacité à agir sont les élèments essentiels pour amener les jeunes que j'accompagne à grandir.</p>
-                    <p>J'ai découvert dans les compétences numérique un terrain de jeu idéal. </p>
+                    <div class="pres-img-box">
+                        <img src="./asset/ep3a.jpeg" alt="Séance Ep3A" class="pres-img">
+                    </div>
+                    <p><strong>Ingénieur pédagogique spécialisé en informatique et mathématiques à l’E2C Grand Lille depuis 2008</strong>, je m’appuie sur une conviction profonde : l’apprentissage est un levier d’émancipation.</p>
+
+                    <p><strong>Éveiller la curiosité, stimuler l’autonomie et renforcer la capacité d’agir</strong> sont pour moi des piliers essentiels pour aider les jeunes que j’accompagne à se développer et à s’épanouir.</p>
+
+                    <p>J’ai trouvé dans les compétences numériques un véritable terrain d’expression et d’innovation, où je peux conjuguer créativité et pédagogie.</p>
+                    
                 </div>
             </div>
             <div class="profile-right">
                 <div class="assets box-custom">
                     <h2>Mes Atouts</h2>
+                    <h3>Curieux</h3>
+                    <p>Passionné par l’apprentissage continu, j’aime explorer de nouvelles idées et concepts. Je sais écouter activement et éviter les biais dans les raisonnements pour mieux comprendre mon environnement.</p>
+                    <h3>Force de proposition</h3>
+                    <p>Engagé dans le travail collectif, je mets mes compétences au service de l’équipe et suis prêt à me remettre en question pour progresser et améliorer les projets.</p>
+                    <h3>Créatif</h3>
+                    <p>Capable d’imaginer et de mettre en œuvre des solutions innovantes face aux problématiques rencontrées.</p>
+                    <h3>Esprit d'analyse</h3>
+                    <p>Excellente capacité de recul, me permettant de considérer l’ensemble des facteurs en jeu pour proposer des améliorations et des solutions adaptées.</p>
+
                 </div>
                 <div class="skill box-custom">
                     <h2>Mes Compétences</h2>
+                    <div class="skill-list">
+                        <div class="skill-part">
+                            <h3>Pédagogie</h3>
+                            
+                            <ul>
+                                <li>Expertise en pédagogie participative : pédagogie de projet, pédagogie inversée (LDL), approche par compétences.</li>
+                                <li>Formé aux méthodologies ADVP (Activation du Développement Vocationnel et Personnel) et à l’entretien d’explicitation.</li>
+                                <li>Expérience dans la mise en place de communautés d’apprentissage collaboratives.</li>
+                            </ul> 
+                        </div>
+                        <div class="skill-part">
+                            <h3>Informatique</h3>
+                            <ul>
+                                <li><strong>Développement Web</strong> :maîtrise de HTML, CSS, JavaScript, MySQL, PHP, avec une expérience des frameworks <strong>Bootstrap</strong> et <strong>Symfony</strong>.</li>
+                                <li><strong>Multimédia / 3D</strong> : compétences sur des outils comme <strong>Gimp</strong>, <strong>ShotCut</strong>, <strong>InkScape</strong>, <strong>Blender</strong>, et <strong>Unity3D</strong>.</li>
+                                <li><strong>Administration réseau et serveurs </strong>: gestion de serveurs Kwartz et conception d’architectures réseau avec <strong>Cisco Packet Tracer.</strong></li>
+                            </ul>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
-        <div class="pro-pack"></div>
-        <div class="perso-pack"></div>
+        <div class="pro-pack">
+            <div class="pro-left">
+                <div class="pro box-custom">
+                    <h2>Parcours professionnel</h2>
+                    <div id="pro1" class="pro-exp">
+                        <h3>Ingénieur pédagogique</h3>
+                        <h4>E2C - Grand Lille - Depuis 2017</h4>
+                        <ul>
+                            <li>Conception du parcours Prépa Numérique</li>
+                            <li>Création de supports pédagogiques</li>
+                            <li>Mise en place de partenariats</li>
+                        </ul> 
+                    </div>
+                    <div id="pro2" class="pro-exp">
+                        <h3>Responsable informatique</h3>
+                        <h4>E2C - Grand Lille - Depuis 2020</h4>
+                        <ul>
+                            <li>Administration de réseaux informatiques</li>
+                            <li>Maintenance de premier niveau - lien avec la DSI</li>
+                            <li>Support et accompagnement des équipes</li>
+                        </ul>
+                    </div>
+                    <div id="pro3" class="pro-exp">
+                        <h3>Référent pédagogique</h3>
+                        <h4>E2C - Grand Lille - 2008-2020</h4>
+                        <ul>
+                            <li>Suivi individuel de jeunes en insertion professionnelle</li>
+                            <li>Animation de séances de formation</li>
+                            <li>Administrateur du système d’information</li>
+                        </ul>
+                    </div>
+                    <div id="pro4" class="pro-exp">
+                        <h3>Médiateur Scientifique</h3>
+                    <h4>Forum des Sciences - 1998 - 2008</h4>
+                    <ul>
+                        <li>Animation d’ateliers et d’expositions scientifiques</li>
+                        <li>Création de scénarios d’animation</li>
+                        <li>Création et animation de conférences scientifiques
+                            à destination d’un jeune public (6-10 ans)</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pro-right">
+                <div class="pro-photo box-custom">
+                    <img src="./asset/pro-photo.jpg" alt="La prépa numérique de 2023">
+                </div>
+                <div class="form box-custom">
+                    <h2>Formations</h2>                    
+                    <h3>Maîtrise de Sciences-physiques</h3>
+                    <h4>Université de Tours - 2002</h4>
+                    <h3>Licence de Sciences-physiques</h3>
+                    <h4>Université de Lille - 2001</h4>
+                    <h3>Baccalauréat Série C</h3>
+                    <h4>Lycée Raymond Queneau, Villeneuve d'Ascq</h4>
+                </div>
+            </div>
+            
+        </div>
+        <div class="perso-pack">
+            <div class="perso-left">
+                <div class="interest box-custom">
+                    <h2>Centres d'intérêts</h2>
+                    <ul>
+                        <li><strong>Histoire et épistémologie des sciences</strong> : Exploration des interactions entre sciences, religions, et systèmes politiques et économiques.</li>
+                        <li><strong>Musique</strong> : Bassiste amateur et passionné par la création musicale procédurale (notamment avec Sonic Phi).</li>
+                        <li><strong>Dessin numérique</strong> : Pratique en amateur avec tablette graphique.</li>
+                        <li><strong>Jeux et ludique</strong> : Passionné de jeux de rôle, jeux coopératifs, échecs et jeux vidéo, avec un intérêt particulier pour les enjeux économiques et sociétaux du secteur vidéoludique.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="perso-right">
+                <div class="book box-custom">
+                    <h2>Réalisations</h2>
+                </div>
+            </div>
+
+        </div>
     </main>
 </body>
 </html>
